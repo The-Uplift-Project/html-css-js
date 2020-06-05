@@ -1,7 +1,3 @@
-# html-css-js
-For HTML, CSS and Javascript
-
-
 # HTML, CSS & Javascript
 
 Submit Project Idea for Uplift Project before 10th June.
