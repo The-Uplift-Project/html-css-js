@@ -1,6 +1,6 @@
 # HTML, CSS & Javascript
 
-Submit Project Idea for Uplift Project before 10th June.
+This repository should only be used to submit materials realated to your project like codes, reports, project ideas etc under the Uplift Project.
 
 ## Submission Procedure
 
@@ -22,7 +22,6 @@ Read the following steps and guidelines properly for proper submission of your p
 ## NOTE
 
 DO NOT COMMIT TO THE `master` branch. Only commit to your team branch.
-
 
 ### Each branch will contain
 
