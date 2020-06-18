@@ -10,12 +10,12 @@
   This repository should only be used to submit materials realated to your project like codes, reports, project ideas etc under the Uplift Project.
 
   </p>
-  ***
+  
   A resume builder is a software developed to simplify the task of creating a resume for individuals. The application provides an effective means of designing the desired resume, in fact, a professional-looking resume. The system is flexible to be used and reduces the need for thinking and designing an appropriate resume according to qualifications. Usually, individuals get confused while creating a resume especially for a novice person such as graduate students. They don’t get a clear idea of what things and information must be included in a resume. Hence the system is developed to provide them an easy way for creating a professional-looking resume.
 
 ![ResumeBuilder](./images/resume.png)
 
-***
+
 
 ## How to contribute to this project?
 
