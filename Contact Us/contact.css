@@ -1,0 +1,53 @@
+#leftColumn{
+   height: 60vh;
+    background-color: honeydew;
+}
+#rightColumn{
+ height: 60vh;
+background-color: lightpink;
+
+
+}
+
+
+body{
+	 background-color: paleturquoise;
+}
+
+
+button{
+	background:linear-gradient(45deg,#E74C3C ,gold);
+}
+
+
+#contactSection{
+	
+	
+	border: 1px;
+	border-color: black;
+    border-style:ridge;
+}
+
+iframe{
+	padding: 15px;
+	margin: 5px;
+	height:45vh;
+	width:100%;
+	}
+	#contactHeading{
+
+	border: 10px;
+	padding: 5px;
+		color: crimson;
+
+}
+#locationHeading{
+
+	border: 10px;
+	padding: 5px;
+		color: coral;
+
+}
+label{
+	color: crimson;
+}

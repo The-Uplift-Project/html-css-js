@@ -1,0 +1,178 @@
+
+/*page-content*/
+#container{
+    display: flex;
+    flex-direction: row;
+    background-color: paleturquoise;
+    margin-top: 110px;
+}
+
+/*aside*/
+aside{
+    width: 28%
+    border: 4px solid black;
+    margin-top: 20px;
+}
+#side-heading{
+    font-weight: 800;
+    border: 0.3px black solid;
+    color: coral;
+}
+
+#items li{
+    margin-left: 10px;
+    list-style: none;
+    padding: 2px;
+}
+
+.card-body{
+    display: inline-block;
+}
+
+
+.indicator:before{
+    content: 
+}
+
+.input{
+    margin-left: 200px;
+}
+
+#fas fa-search{
+    padding: 20px;
+}
+
+.card-header{
+    text-decoration: none;
+    text-decoration-color: crimson;
+}
+.items-list{
+    
+}
+
+
+
+/*Content*/
+/*Product section*/
+#product-section{
+    width: 64%;
+    display: inline-block;
+    border: 3px black;
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+ html , body{
+   margin: 0px;
+   padding: 0px;
+   min-height: 100%;
+   height:100%;
+}
+
+
+.footer-top{
+    background: khaki;
+    color:white;
+    padding: 50px 0;
+    padding-left: 15px;
+}
+
+.segment-one h3{
+    font-family:'Courier New', Courier, monospace;
+    
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-two h2{
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+.segment-two h2:before{
+    content: '|';
+    color:#c65039;
+    padding-right: 10px;
+}
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255,255, 255, 0.3);
+    line-height: 30px;
+}
+.segment-two ul li a{
+    color:wheat;
+    text-decoration: none;
+}
+.segment-three h2{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+  }
+.segment-three h2:before{
+    content: '|';
+    color:#c65039;
+    padding-right: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.segment-three a i{
+    font-size: 20px;
+    color:#fff;
+    padding: 10px 12px;
+}
+.segment-four h2{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.segment-four h2:before{
+    content: '|';
+    color:#c65039;
+    padding-right: 10px;
+}
+.sub{
+    
+    display: block;
+}
+
+.segment-four form input[type=submit]{
+    background:orangered;
+    border:none;
+    padding: 3px 2px;
+    margin-left: -5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-bottom-text{
+    text-align: center;
+    background:steelblue;
+    line-height: 50px;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
+
+}
