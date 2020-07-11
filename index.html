@@ -1,14 +1,14 @@
 <html>
   <head>
     <link rel="stylesheet"href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <title>HomeMade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>HandMade</title>
   </head>
   <body>
     <!--navigation bar read more about this at https://getbootstrap.com/docs/4.0/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-      <a class="navbar-brand" id="logo" href="index.html">HomeMade</a>
+      <a class="navbar-brand" id="logo" href="index.html">HandMade</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,27 +17,24 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Welcome Home! <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> About Us </a>
+            <a class="nav-link"  href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" id="options" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Explore
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Paintings</a>
-              <a class="dropdown-item" href="#">Giftables</a>
-              <a class="dropdown-item" href="#">Accessories</a>
+              <a class="dropdown-item" id="categories" href="#">Paintings</a>
+              <a class="dropdown-item" id="categories" href="#">Giftables</a>
+              <a class="dropdown-item" id="categories" href="#">Accessories</a>
             </div>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="options" href="#"> About Us </a>
+          </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="email@domain.com" aria-label="Login">
-          <button class="btn btn-success my-2 my-sm-0" type="submit">Login / Signup</button>
-        </form>
-      </div>
+        <button class="btn btn-success my-2 my-sm-0" id = "login" type="submit">Login / Signup</button>
+        </div>
     </nav>
     <!--navbar ends here-->
 
