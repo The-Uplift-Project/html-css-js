@@ -1,0 +1,290 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shop for Women</title>
+	
+		  <link rel="stylesheet" href="w3.css">
+		  <link rel="stylesheet" href="footer.css">
+       <link rel="icon" href="./favicon.ico" />
+         
+  <link rel="stylesheet" href="carouselandheader.css">
+
+		  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="shop_for_women.css">
+	</head>
+
+
+	<body>
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="80"
+        class=" image d-inline-block align-top" alt="" loading="lazy"><span
+        class="p-3 display-4 name logo"><b>OneClickPick</b></span></a>
+
+    <!-- all the links inside mobile menu  -->
+    <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+      <!-- left side nav bar  -->
+      <ul class="navbar-nav upbar">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle display mr-5" href="../PriyanshiAgrawal-Home/carouselandheader.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Home</b>
+          </a>
+        
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5 mr-5" href="#"><b>Shop</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5" href="..\Nikhil-Blog\Blog grid section\Blog-g.html"><b>Blog</b></a>
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5" href="#footer"><b>Contact</b></a>
+        </li>
+        <div class="icons d-flex flex-row bd-highlight ml-5 float-left">
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link ml-5" href="#"><b><i class="fa fa-search" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link" href="#"><b><i class="fa fa-user" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link" href="..\Abhishek -Cart\cart.html"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+<section>
+<div class="container">
+  <img class="mySlides" src="images/heroimg1.jpg" align="center"   width=100% height=250 px>
+   <img class="mySlides" src="images/heroimg2.jpg" align="center"   width=100% height=250 px>
+    <img class="mySlides" src="images/heroimg3.jpg" align="center"   width=100% height=250 px>
+  <div class="content">
+ 
+   <div id="top-nav2">
+            <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home ></a></li>
+            <li><a href="#">Shop ></a></li>
+            <li><a href="#">Shop for Women</a></li>
+            </ul>
+         </div></div></div>
+
+</section>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+<div class="center">  <div class="row">
+   <div class="column">
+   <div class="n-ppost"> <img src="images/img1.jpg" alt="" style="width:100%">
+     <p>Sneakers & Keds<br><a  href="#" ><b>Women Colorblock Sneakers</b></a><br>$154.00</p>
+    <span class="w3-tag w3-display-topleft">New</span>
+     
+  </div>
+  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+  <div class="column">
+   <div class="n-ppost"> <img src="images/02.jpg" alt="" style="width:100%">
+     <p>  Women’s T-shirt<br><a  href="#"><b>Cotton Lace Blouse</b></a><br>$28.50 <s>38.50</s></p>
+ 
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+  <div class="column">
+   <div class="n-ppost"> <img src="images/03.jpg" alt="" style="width:100%">
+     <p> Women’s Shorts<br><a  href="#"><b>Mom High Waist Shorts</b></a><br>$39.50</p>
+  </div>
+   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+   <div class="column">
+    <div class="n-ppost"><img src="images/04.jpg" alt="" style="width:100%">
+     <p>   Sportswear<br><a  href="#"><b>Women Sports Jacket</b></a><br>$68.40</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+   <div class="column">
+    <div class="n-ppost"><img src="images/05.jpg" alt="" style="width:100%">
+     <p> Men’s Sunglasses<br><a  href="#"><b>Polarized Sunglasses</b></a><br>Out of stock</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+   <div class="column">
+    <div class="n-ppost"><img src="images/06.jpg" alt="" style="width:100%">
+     <p> Backpacks<br><a  href="#"><b>TH Jeans City Backpack</b></a><br>$79.50</p>
+  </div>
+   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+</div>
+
+<div class="banner"> 
+  <img src="images/banner.jpg" alt="" style="width:100%" height=250 px>
+   <div class="top-left"><p>Converse All Star<br><b>Make Your Day Comfortable</b></p> </div>
+     <button class="banner_btn"><a href="#" style="color:black">Shop Now</a></button>
+</div>
+
+ <div class="row">
+  <div class="column">
+   <div class="n-ppost"> <img src="images/07.jpg" alt="" style="width:100%">
+     <p>Women's Swimwear<br><a  href="#"><b>Two-Piece Bikini in Print</b></a><br>$18.99</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+  <div class="column">
+    <div class="n-ppost"><img src="images/08.jpg" alt="" style="width:100%">
+     <p> Kid's Toys<br><a  href="#"><b>Soft Panda Teddy Bear</b></a><br>$14.99 </p>
+  </div> 
+  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+  <div class="column">
+   <div class="n-ppost"> <img src="images/09.jpg" alt="" style="width:100%">
+     <p>Cosmetics<br><a  href="#"><b>Metallic Lipstick (Crimson)</b></a><br>$12.99</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+   <div class="column">
+   <div class="n-ppost"> <img src="images/10.jpg" alt="" style="width:100%">
+     <p>Men’s Accessories<br><a  href="#"><b>5-Pack Multicolor Bracelets</b></a><br>$7.99</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+   <div class="column">
+    <div class="n-ppost"><img src="images/11.jpg" alt="" style="width:100%">
+     <p> Men’s Sandals<br><a  href="#"><b>Soft Footbed Sandals</b></a><br>$99.50</p>
+  </div>
+   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+   <div class="column">
+    <div class="n-ppost"><img src="images/12.jpg" alt="" style="width:100%">
+     <p>Men’s Hats<br><a  href="#"><b>3-Color Sun Stash Hat</b></a><br>$25.99</p></div></div>
+     <div class="column">
+    <div class="n-ppost"><img src="images/13.jpg" alt="" style="width:100%">
+     <p>Men’s T-shirts<br><a  href="#"><b>Cotton Polo Regular Fit</b></a><br>$11.50<s> $13.50</s></p>
+  </div>
+   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+   <div class="column">
+   <div class="n-ppost"> <img src="images/14.jpg" alt="" style="width:100%">
+     <p> Men’s Jeans<br><a  href="#"><b>Slim Taper Fit Jeans</b></a><br>$58.99</p>
+  </div> 
+  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+   <div class="column">
+   <div class="n-ppost"> <img src="images/15.jpg" alt="" style="width:100%">
+     <p>Men’s Waistcoats<br><a  href="#"><b>Single-breasted Trenchcoat</b></a><br>$79.99</p>
+  </div>
+ <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+  </div>
+</div>
+<div class="pagination">
+  <a href="#">&laquo; Prev</a>
+  <a href="#" class="active">1</a>
+  <a href="#" >2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">Next &raquo;</a>
+</div>
+</div>
+
+
+
+
+
+ <footer id="footer">
+                <div class="footer-top">
+                    
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12 segment-one ">
+                                <h3>About Us</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 segment-two ">
+                            <h2>Shop department</h2>
+                            <ul>
+                                <li><a href="#">Mens</a></li>
+                                <li><a href="#">womens</a></li>
+                                <li><a href="#">Kids</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                            
+                            <h2>Follow Us</h2>
+                            <p>Please Follow Us On Our Social Media Profile To Keep Updated</p>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four m-0">
+                            <h2> New Brands</h2>
+                            <p>Subscribe to our newsletter to receive early discount on our new brands!!</p>
+                            <div class="sub">
+                            <form action="">
+                                <input id="mail" type="email" placeholder="Your email">
+                                <input id ="sbutton" type="submit" value="subscribe">
+                        
+                            </form>
+                            </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                <p class="footer-bottom-text">All Right Reserved by &copy; Team Uplift 2020</p>
+            </footer>
+            <script src="imgs.js"></script>
+            
+	</body>
+</html>

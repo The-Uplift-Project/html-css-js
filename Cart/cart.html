@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="80"
+        class=" image d-inline-block align-top" alt="" loading="lazy"><span
+        class="p-3 display-4 name logo"><b>OneClickPick</b></span></a>
+
+    <!-- all the links inside mobile menu  -->
+    <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+      <!-- left side nav bar  -->
+      <ul class="navbar-nav upbar">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle display mr-5" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Home</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5 mr-5" href="#"><b>Shop</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle display mr-5" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Template</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5" href="#"><b>Blog</b></a>
+        </li>
+        <li class="nav-item display">
+          <a class="nav-link mr-5" href="#"><b>Contact</b></a>
+        </li>
+        <div class="icons d-flex flex-row bd-highlight ml-5 float-left">
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link ml-5" href="#"><b><i class="fa fa-search" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link" href="#"><b><i class="fa fa-user" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+          <div class="p-2 bd-highlight">
+            <li class="nav-item display">
+              <a class="nav-link" href="#"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i></b></a>
+            </li>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </nav>
+
+    <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="border-0 bg-light">
+                <div class="p-2 px-3 text-uppercase">Product</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Price</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Quantity</div>
+              </th>
+              <th scope="col" class="border-0 bg-light">
+                <div class="py-2 text-uppercase">Remove</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="border-0">
+                <div class="p-2">
+                  <img src="image/w1.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                  </div>
+                </div>
+              </th>
+              <td class="border-0 align-middle"><strong><span>&#8377;</span>
+                79.00</strong></td>
+              <td class="border-0 align-middle"><strong>3</strong></td>
+              <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="image/len.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">canon camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
+                  </div>
+                </div>
+              </th>
+              <td class="align-middle"><strong><span>&#8377;</span>
+                79.00</strong></td>
+              <td class="align-middle"><strong>3</strong></td>
+              <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="p-2">
+                  <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                  <div class="ml-3 d-inline-block align-middle">
+                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
+                  </div>
+                </div>
+                <td class="align-middle"><strong><span>&#8377;</span>
+                    79.00</strong></td>
+                <td class="align-middle"><strong>3</strong></td>
+                <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End -->
+    </div>
+  </div>
+
+  <div class="row py-5 p-4 bg-white rounded shadow-sm">
+    <div class="col-lg-6">
+      <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Coupon code</div>
+      <div class="p-4">
+        <p class="font-italic mb-4">If you have a coupon code, please enter it in the box below</p>
+        <div class="input-group mb-4 border rounded-pill p-2">
+          <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3" class="form-control border-0">
+          <div class="input-group-append border-0">
+            <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i class="fa fa-gift mr-2"></i>Apply coupon</button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Instructions for seller</div>
+      <div class="p-4">
+        <p class="font-italic mb-4">If you have some information for the seller you can leave them in the box below</p>
+        <textarea name="" cols="30" rows="2" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+      <div class="p-4">
+        <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+        <ul class="list-unstyled mb-4">
+          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong><span>&#8377;</span>
+            390.00</strong></li>
+          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong><span>&#8377;</span>
+            10.00</strong></li>
+          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong><span>&#8377;</span>
+            0.00</strong></li>
+          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+            <h5 class="font-weight-bold"><span>&#8377;</span>
+                400.00</h5>
+          </li>
+        </ul><a href="billing.html" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to checkout</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+        
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-one ">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 segment-two ">
+                <h2>Shop department</h2>
+                <ul>
+                    <li><a href="#">Mens</a></li>
+                    <li><a href="#">womens</a></li>
+                    <li><a href="#">Kids</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                
+                <h2>Follow Us</h2>
+                <p>Please Follow Us On Our Social Media Profile To Keep Updated</p>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 segment-four m-0">
+                <h2> New Brands</h2>
+                <p>Subscribe to our newsletter to receive early discount on our new brands!!</p>
+                <div class="sub">
+                <form action="">
+                    <input  type="email" placeholder="Your email">
+                    <input  type="submit" value="subscribe">
+            
+                </form>
+                </div>
+                </div>
+            </div>
+        
+    </div>
+    <p class="footer-bottom-text">All Right Reserved by &copy; Team Uplift 2020</p>
+</footer>
+
+
+
+
+
+</body>
+</html>

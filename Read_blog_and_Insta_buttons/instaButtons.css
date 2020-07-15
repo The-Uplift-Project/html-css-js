@@ -1,0 +1,30 @@
+@media(min-width: 768px){
+.container-1{
+	display: flex;
+  text-align: center;
+
+}
+}
+.container-1 div
+{
+  border: none;
+   text-align:center;
+   margin: none;
+    min-height: 95px;
+    vertical-align: center;
+    padding-top: 45px;
+      flex-basis: 27%;
+}
+p {
+	margin-top:  none;
+}
+.box-1{
+  background-color: paleturquoise;
+  flex: 0.5;
+  color: gold;
+}
+.box-2{
+background-color:lightpink;
+flex: 0.5;
+  color: crimson;
+}
