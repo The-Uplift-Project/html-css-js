@@ -1,5 +1,5 @@
-.{
-  font-family: Poppins;
+html body{
+  font-family: 'Poppins', sans-serif;;
   }
 
 #navbar{
@@ -22,7 +22,6 @@
 .active{
   margin-left: 2vw;
   padding-right: 1vw;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -52,7 +51,6 @@
   background-color: #228B22;
 }
 #categories{
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -61,7 +59,6 @@
 #options{
   padding-left: 1vw;
   padding-right: 1vw;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
