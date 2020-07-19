@@ -1,0 +1,71 @@
+html body{
+  font-family: 'Poppins', sans-serif;;
+  }
+
+#navbar{
+  background-color: #F6BD60;
+  font-size: 22px;
+}
+
+#logo{
+
+  font-family: 'Merienda', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #784C04;
+}
+.active{
+  margin-left: 2vw;
+  padding-right: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#login{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 3vw;
+    color: #ffffff;
+    background-color: #32B030;
+}
+#login:hover{
+  background-color: #228B22;
+}
+#categories{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+}
+#options{
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
