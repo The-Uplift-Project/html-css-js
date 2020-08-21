@@ -1,6 +1,6 @@
 # OneClickPick
 
-![uplift_image](https://www.girlscript.tech/programs/uplift/images/uplift_logo.png)
+![website_image](https://github.com/anna4j/team-html06/blob/Team-HTML06/images/Capture.PNG)
 
 
 # HTML CSS JavaScript 
