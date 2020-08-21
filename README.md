@@ -1,11 +1,11 @@
-# The Uplift project
+# OneClickPick
 
 ![uplift_image](https://www.girlscript.tech/programs/uplift/images/uplift_logo.png)
 
 
 # HTML CSS JavaScript 
 # Team name: team-html06
-# Domain: Marketingarketing
+# Domain: Marketing
 
 
 We are creating a Landing Page for a Fashion Store with a built in IBM Watson Chat-Bot. The Landing Page will include details about: 
