@@ -19,6 +19,7 @@
 
 
 	<body>
+    <div class="header-inner">
 	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +34,9 @@
       <!-- left side nav bar  -->
       <ul class="navbar-nav upbar">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle display mr-5" href="../PriyanshiAgrawal-Home/carouselandheader.html" id="navbarDropdown" role="button"
+          <a class="nav-link dropdown-toggle display mr-5" href="../Home/carouselandheader.html" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <b>Home</b>
+           <i class="fa fa-home"></i> <b>Home</b>
           </a>
         
         </li>
@@ -43,10 +44,10 @@
           <a class="nav-link mr-5 mr-5" href="#"><b>Shop</b> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item display">
-          <a class="nav-link mr-5" href="..\Nikhil-Blog\Blog grid section\Blog-g.html"><b>Blog</b></a>
+          <a class="nav-link mr-5" href="..\Blog1\Blog-g.html"><b>Blog</b></a>
         </li>
         <li class="nav-item display">
-          <a class="nav-link mr-5" href="#footer"><b>Contact</b></a>
+          <a class="nav-link mr-5" href="..\Contact Us\Contact Us Page.html"><b>Contact</b></a>
         </li>
         <div class="icons d-flex flex-row bd-highlight ml-5 float-left">
           <div class="p-2 bd-highlight">
@@ -61,14 +62,14 @@
           </div>
           <div class="p-2 bd-highlight">
             <li class="nav-item display">
-              <a class="nav-link" href="..\Abhishek -Cart\cart.html"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i></b></a>
+              <a class="nav-link" href="..\Cart\cart.html"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i></b></a>
             </li>
           </div>
         </div>
 
       </ul>
     </div>
-  </nav>
+  </nav></div>
 
 
 
@@ -78,14 +79,93 @@
    <img class="mySlides" src="images/heroimg2.jpg" align="center"   width=100% height=250 px>
     <img class="mySlides" src="images/heroimg3.jpg" align="center"   width=100% height=250 px>
   <div class="content">
- 
-   <div id="top-nav2">
-            <ul>
-            <li><a href="#"><i class="fa fa-home"></i>Home ></a></li>
-            <li><a href="#">Shop ></a></li>
-            <li><a href="#">Shop for Women</a></li>
-            </ul>
-         </div></div></div>
+ <div class="custom-select" style="width:200px;">
+Sort by:
+ <select>
+    <option value="0" >Popularity<i class='fas fa-angle-down' style='font-size:24px'></i></option>
+      <option value="1">Popularity</option>
+    <option value="2">Low-High Price</option>
+    <option value="3">High-Low Price</option>
+    <option value="4">Average Rating</option>
+    <option value="5">A-Z Order</option>
+    <option value="6">Z-A Order</option>
+  </select>
+
+</div>
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+
+document.addEventListener("click", closeAllSelect);
+</script>
+  
+  <div class="page-no"><1/5></div>
+  </div></div>
 
 </section>
 
@@ -106,6 +186,835 @@ function carousel() {
   setTimeout(carousel, 3000);
 }
 </script>
+
+
+
+<div class="sidebar">
+ 
+<h2> Categories</h2>
+
+<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Shoes</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <input type="text" placeholder="Search" class="myInput" id="myInput1" onkeyup="filterFunction1()">
+   <table id="myTable1" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>1,953</td>
+  </tr>
+  <tr>
+    <td>Pumps & High Heels</td>
+    <td>247</td>
+  </tr>
+  <tr>
+    <td>Ballerinas & Flats</td>
+    <td>156</td>
+  </tr>
+  <tr>
+    <td>Sandals</td>
+    <td>310</td>
+  </tr>
+  <tr>
+    <td>Sneakers</td>
+    <td>402</td>
+  </tr>
+  <tr>
+    <td>Boots</td>
+    <td>393</td>
+  </tr>
+  <tr>
+    <td>Ankle Boots</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Loafers</td>
+    <td>93</td>
+  </tr>
+  <td>Slip-on</td>
+    <td>122</td>
+  </tr>
+  <td>Flip Flops</td>
+    <td>116</td>
+  </tr>
+  <td>Clogs & Mules</td>
+    <td>24</td>
+  </tr>
+  <td>Athletic Shoes</td>
+    <td>31</td>
+  </tr>
+  <td>Oxfords</td>
+    <td>9</td>
+  </tr>
+  <td>Smart Shoes</td>
+    <td>18</td>
+  </tr>
+</table>
+  </div>
+</div>
+<script>
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+function filterFunction1() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction2()" class="dropbtn">Clothing</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <input type="text" placeholder="Search.." class="myInput" id="myInput2" onkeyup="filterFunction2()">
+   <table id="myTable2" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>2,548</td>
+  </tr>
+  <tr>
+    <td>Blazers & Suits</td>
+    <td>235</td>
+  </tr>
+  <tr>
+    <td>Blouses</td>
+    <td>156</td>
+  </tr>
+  <tr>
+    <td>Cardigans & Jumpers
+</td>
+    <td>107</td>
+  </tr>
+  <tr>
+    <td>Dresses</td>
+    <td>93</td>
+  </tr>
+  <tr>
+    <td>Hoodie & Sweatshirts</td>
+    <td>122</td>
+  </tr>
+  <tr>
+    <td>Jackets & Coats</td>
+    <td>116</td>
+  </tr>
+  <tr>
+    <td>Jeans</td>
+    <td>215</td>
+  </tr>
+  <td>Lingerie</td>
+    <td>150</td>
+  </tr>
+  <td>Maternity Wear</td>
+    <td>8</td>
+  </tr>
+  <td>Nightwear</td>
+    <td>26</td>
+  </tr>
+  <td>Shirts</td>
+    <td>164</td>
+  </tr>
+  <td>Shorts</td>
+    <td>147</td>
+  </tr>
+  <td>Socks & Tights</td>
+    <td>139</td>
+  </tr>
+  <tr>
+    <td>Sportswear</td>
+    <td>65</td>
+  </tr>
+  <tr>
+    <td>Swimwear</td>
+    <td>18</td>
+  </tr>
+  <td>T-shirts & Vests</td>
+    <td>209</td>
+  </tr>
+  <td>Tops</td>
+    <td>132</td>
+  </tr>
+  <td>Trousers</td>
+    <td>105</td>
+  </tr>
+  <td>Underwear</td>
+    <td>87</td>
+  </tr>
+</table>
+  </div>
+</div>
+
+<script>
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction2() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable2");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction3()" class="dropbtn">Bags</button>
+  <div id="myDropdown3" class="dropdown-content">
+    <input type="text" placeholder="Search.." class="myInput" id="myInput3" onkeyup="filterFunction3()">
+   <table id="myTable3" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>801</td>
+  </tr>
+  <tr>
+    <td>HandBags</td>
+    <td>238</td>
+  </tr>
+  <tr>
+    <td>Backpacks</td>
+    <td>116</td>
+  </tr>
+  <tr>
+    <td>Wallets</td>
+    <td>104</td>
+  </tr>
+  <tr>
+    <td>Luggage</td>
+    <td>115</td>
+  </tr>
+  <tr>
+    <td>Lumbar Packs</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>Duffle Bags</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Bag/Tracel Accessories</td>
+    <td>93</td>
+  </tr>
+  <td>Diaper Bags</td>
+    <td>5</td>
+  </tr>
+  <td>Lunch Bags</td>
+    <td>8</td>
+  </tr>
+  <td>Messenger Bags</td>
+    <td>2</td>
+  </tr>
+  <td>Laptop Bags</td>
+    <td>31</td>
+  </tr>
+  <td>Briefcases</td>
+    <td>45</td>
+  </tr>
+  <td>Sports Bags</td>
+    <td>18</td>
+  </tr>
+  
+   
+</table>
+  </div>
+</div>
+
+<script>
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+function filterFunction3() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable3");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+
+<div class="dropdown">
+  <button onclick="myFunction4()" class="dropbtn">Sunglasses</button>
+  <div id="myDropdown4" class="dropdown-content">
+    <input type="text" placeholder="Search.." class="myInput" id="myInput4" onkeyup="filterFunction4()">
+   <table id="myTable4" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>1,842</td>
+  </tr>
+  <tr>
+    <td>Fashion Sunglasses</td>
+    <td>953</td>
+  </tr>
+  <tr>
+    <td>Sport Sunglasses</td>
+    <td>589</td>
+  </tr>
+  <tr>
+    <td>Classic Sunglasses</td>
+    <td>300</td>
+  </tr>
+  
+   
+  
+   
+</table>
+  </div>
+</div>
+
+<script>
+
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+function filterFunction4() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput4");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable4");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+
+<div class="dropdown">
+  <button onclick="myFunction5()" class="dropbtn">Watches</button>
+  <div id="myDropdown5" class="dropdown-content">
+    <input type="text" placeholder="Search.." class="myInput" id="myInput5" onkeyup="filterFunction5()">
+    <div class="dropdown">
+   <table id="myTable5" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>734</td>
+  </tr>
+  <tr>
+    <td>Fashion Watches</td>
+    <td>572</td>
+  </tr>
+  <tr>
+    <td>Casual Watches</td>
+    <td>110</td>
+  </tr>
+  <tr>
+    <td>Luxury Watches</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>Sport Watches</td>
+    <td>18</td>
+  </tr>
+  
+  
+   
+</table>
+  </div>
+</div>
+
+<script>
+
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+function filterFunction5() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput5");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable5");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+
+
+  <button onclick="myFunction6()" class="dropbtn">Acessories</button>
+  <div id="myDropdown6" class="dropdown-content">
+    <input type="text" placeholder="Search.." class="myInput" id="myInput6" onkeyup="filterFunction6()">
+    <div class="dropdown">
+   <table id="myTable6" class="myTable">
+ 
+  <tr>
+    <td>View all</td>
+    <td>920</td>
+  </tr>
+  <tr>
+    <td>Belts</td>
+    <td>364</td>
+  </tr>
+  <tr>
+    <td>Hats</td>
+    <td>405</td>
+  </tr>
+  <tr>
+    <td>Jewelry</td>
+    <td>131</td>
+  </tr>
+  <tr>
+    <td>Cosmetics</td>
+    <td>20</td>
+  </tr>
+  
+  
+   
+</table>
+  </div>
+</div>
+
+<script>
+
+function myFunction6() {
+  document.getElementById("myDropdown6").classList.toggle("show");
+}
+
+function filterFunction6() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput6");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable6");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+<hr width=80% align="center">
+
+Price
+<div class="range_slider">
+  <div class="slider">
+    <div class="track"></div>
+  </div>
+  <div class="output o0"> </div>
+  <div class="thumb t0"></div>
+
+  <div class="output o1"> </div>
+  <div class="thumb t1"></div>
+</div>
+  <script type="text/javascript">var inputsRy = {
+  sliderWidth: 300,
+  minRange: 0,
+  maxRange: 1000, 
+  outputWidth:40,
+  thumbWidth: 18, 
+  thumbBorderWidth: 4,
+  trackHeight: 4,
+  theValue: [520, 900] 
+};
+var isDragging0 = false;
+var isDragging1 = false;
+
+var range = inputsRy.maxRange - inputsRy.minRange;
+var rangeK = inputsRy.sliderWidth / range;
+var container = document.querySelector(".range_slider");
+var thumbRealWidth = inputsRy.thumbWidth + 2 * inputsRy.thumbBorderWidth;
+
+// styles
+var slider = document.querySelector(".slider");
+slider.style.height = inputsRy.trackHeight + "px";
+slider.style.width = inputsRy.sliderWidth + "px";
+slider.style.paddingLeft = (inputsRy.theValue[0] - inputsRy.minRange) * rangeK + "px";
+slider.style.paddingRight = inputsRy.sliderWidth - inputsRy.theValue[1] * rangeK + "px";
+
+var track = document.querySelector(".track");
+track.style.width = inputsRy.theValue[1] * rangeK - inputsRy.theValue[0] * rangeK + "px";
+
+var thumbs = document.querySelectorAll(".thumb");
+for (var i = 0; i < thumbs.length; i++) {
+
+  thumbs[i].style.width = thumbs[i].style.height = inputsRy.thumbWidth + "px";
+  console.log(inputsRy.thumbWidth + "px");
+  thumbs[i].style.borderWidth = inputsRy.thumbBorderWidth + "px";
+  thumbs[i].style.top = -(inputsRy.thumbWidth / 2 + inputsRy.thumbBorderWidth - inputsRy.trackHeight / 2) + "px";
+  thumbs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
+
+}
+var outputs = document.querySelectorAll(".output");
+for (var i = 0; i < outputs.length; i++) {
+  console.log(thumbs[i])
+  outputs[i].style.width = outputs[i].style.height = outputs[i].style.lineHeight = outputs[i].style.left = inputsRy.outputWidth + "px";
+  outputs[i].style.top = -(Math.sqrt(2 * inputsRy.outputWidth * inputsRy.outputWidth) + inputsRy.thumbWidth / 2 - inputsRy.trackHeight / 2) + "px";
+  outputs[i].style.left = (inputsRy.theValue[i] - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
+  outputs[i].innerHTML = "<p>" + inputsRy.theValue[i] + "</p>";
+}
+
+//events
+
+thumbs[0].addEventListener("mousedown", function(evt) {
+  isDragging0 = true;
+}, false);
+thumbs[1].addEventListener("mousedown", function(evt) {
+  isDragging1 = true;
+}, false);
+container.addEventListener("mouseup", function(evt) {
+  isDragging0 = false;
+  isDragging1 = false;
+}, false);
+container.addEventListener("mouseout", function(evt) {
+  isDragging0 = false;
+  isDragging1 = false;
+}, false);
+
+container.addEventListener("mousemove", function(evt) {
+  var mousePos = oMousePos(this, evt);
+  var theValue0 = (isDragging0) ? Math.round(mousePos.x / rangeK) + inputsRy.minRange : inputsRy.theValue[0];
+  console.log(theValue0);
+  var theValue1 = (isDragging1) ? Math.round(mousePos.x / rangeK) + inputsRy.minRange : inputsRy.theValue[1];
+
+  if (isDragging0) {
+
+    if (theValue0 < theValue1 - (thumbRealWidth / 2) &&
+      theValue0 >= inputsRy.minRange) {
+      inputsRy.theValue[0] = theValue0;
+      thumbs[0].style.left = (theValue0 - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
+      outputs[0].style.left = (theValue0 - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
+      outputs[0].innerHTML = "<p>" + theValue0 + "</p>";
+      slider.style.paddingLeft = (theValue0 - inputsRy.minRange) * rangeK + "px";
+      track.style.width = (theValue1 - theValue0) * rangeK + "px";
+
+    }
+  } else if (isDragging1) {
+
+    if (theValue1 > theValue0 + (thumbRealWidth / 2) &&
+      theValue1 <= inputsRy.maxRange) {
+      inputsRy.theValue[1] = theValue1;
+      thumbs[1].style.left = (theValue1 - inputsRy.minRange) * rangeK - (thumbRealWidth / 2) + "px";
+      outputs[1].style.left = (theValue1 - inputsRy.minRange) * rangeK - inputsRy.outputWidth / 2 + "px";
+      outputs[1].innerHTML = "<p>" + theValue1 + "</p>";
+      slider.style.paddingRight = (inputsRy.maxRange - theValue1) * rangeK + "px";
+      track.style.width = (theValue1 - theValue0) * rangeK + "px";
+
+    }
+  }
+
+}, false);
+
+// helpers
+
+function oMousePos(elmt, evt) {
+  var ClientRect = elmt.getBoundingClientRect();
+  return { //objeto
+    x: Math.round(evt.clientX - ClientRect.left),
+    y: Math.round(evt.clientY - ClientRect.top)
+  }
+}</script>
+
+<hr width=80% align="center">
+
+
+Brand
+<input type="text" class="myInput" id="myInput7" onkeyup="myFunction7()" placeholder="Search" title="Type in a name">
+<div class="check">
+<ul id="myUL1" class="myUL">
+  <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >Adidas                  425</pre>
+
+</label></a></li>
+  <li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox">Ann Taylor               15</pre>
+    
+</label></a></li>
+
+  <li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Armani                   18</pre>
+
+   
+</label></a></li>
+  <li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Banana Republic         103</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Bilabong                 27</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Birkenstock              10</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Calvin Klein            365</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Columbia                508</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Converse                176</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Dockers                  54</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Fruit of the Loom       103</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Hanes                    92</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Jimmy Choo               17</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Levi's                  361</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Lee                     264</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Men's Wearhouse          75</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >New Balance             218</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Nike                    810</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Old Navy                157</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Polo Ralph Lauren        64</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Puma                    370</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Reebok                  506</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Skechers                209</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Tommy Hilfiger          487</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Under Armour             90</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Urban Outfitters        152</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Victoria's Secret       238</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Wolverine                29</pre>
+</label></a></li>
+<li><a href="#"><label class="checkbox">
+  <pre><input type="checkbox" >Wrangler                115</pre>
+</label></a></li>
+
+</ul>
+
+<script>
+function myFunction7() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput7");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL1");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script></div>
+<hr width=80% align="center">
+Size
+<input type="text" class="myInput" id="myInput8" onkeyup="myFunction8()" placeholder="Search" title="Type in a name">
+<div class="check">
+<ul id="myUL2" class="myUL">
+  <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >XS                  34</pre>
+
+</label></a></li>
+   <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >S                   57</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >M                  198</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >L                   72</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >XL                  46</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >39                 112</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >40                  85</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >41                 175</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >42                  85</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >43                  15</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >44                  25</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >45                  42</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >46                  19</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >47                  15</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >48                  12</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >49                   8</pre>
+
+</label></a></li>
+ <li><a href="#"><label class="checkbox" checked="checked">
+  <pre><input type="checkbox" >50                   6</pre>
+ 
+</label></a></li>
+
+</ul>
+
+<script>
+function myFunction8() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput8");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</div>
+<hr width=80% align="center">
+ Color
+<div class="color" >
+
+<div class="circle" id="crl1"></div>
+<div class="circle" id="crl2"></div>
+<div class="circle" id="crl3"></div>
+<div class="circle" id="crl4"></div>
+<div class="circle" id="crl5"></div>
+<div class="circle" id="crl6"></div>
+<div class="circle" id="crl7"></div>
+<div class="circle" id="crl8"></div>
+</div>
+</div></div>
+
+
+
 
 
 <div class="center">  <div class="row">
@@ -200,7 +1109,11 @@ function carousel() {
 </div>
    <div class="column">
     <div class="n-ppost"><img src="images/12.jpg" alt="" style="width:100%">
-     <p>Men’s Hats<br><a  href="#"><b>3-Color Sun Stash Hat</b></a><br>$25.99</p></div></div>
+     <p>Men’s Hats<br><a  href="#"><b>3-Color Sun Stash Hat</b></a><br>$25.99</p></div>
+   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div>Quick view</div></div>
+</div>
+    
      <div class="column">
     <div class="n-ppost"><img src="images/13.jpg" alt="" style="width:100%">
      <p>Men’s T-shirts<br><a  href="#"><b>Cotton Polo Regular Fit</b></a><br>$11.50<s> $13.50</s></p>
@@ -223,16 +1136,16 @@ function carousel() {
   <div>Quick view</div></div>
   </div>
 </div>
+</div>
 <div class="pagination">
   <a href="#">&laquo; Prev</a>
-  <a href="#" class="active">1</a>
+  <a href="#" class="active"><b>1</b></a>
   <a href="#" >2</a>
   <a href="#">3</a>
   <a href="#">4</a>
   <a href="#">5</a>
   <a href="#">6</a>
   <a href="#">Next &raquo;</a>
-</div>
 </div>
 
 
