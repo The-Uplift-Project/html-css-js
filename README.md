@@ -8,7 +8,7 @@
 # Domain: Marketing
 
 
-We are creating a Landing Page for a Fashion Store with a built in IBM Watson Chat-Bot. The Landing Page will include details about: 
+We have created a Landing Page for a Fashion Store with a built in IBM Watson Chat-Bot. The Landing Page will include details about: 
 
 1.	The types of clothes available – Men and Women section
 2.	Shop by Store- Contains different	Locations of the store
