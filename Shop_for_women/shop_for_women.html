@@ -3,83 +3,88 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Shop for Women</title>
+		<title>Women's section</title>
 	
 		  <link rel="stylesheet" href="w3.css">
-		  <link rel="stylesheet" href="footer.css">
-       <link rel="icon" href="./favicon.ico" />
-         
-  <link rel="stylesheet" href="carouselandheader.css">
-
+		  <link rel="stylesheet" href="../Footer/footer.css">        
+   <link rel="stylesheet" href="../style.css">
 		  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="shop_for_women.css">
+
 	</head>
 
 
 	<body>
-    <div class="header-inner">
-	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg Nav fixed-top">
+    <a class="navbar-brand logo" href="index.html">
+      <span class="sign mt-sm-5"><span class="fast-flicker">
+          One</span><span class="flicker">Click</span>Pick</span></a>
+    <button class="navbar-toggler customtoggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="80"
-        class=" image d-inline-block align-top" alt="" loading="lazy"><span
-        class="p-3 display-4 name logo"><b>OneClickPick</b></span></a>
 
-    <!-- all the links inside mobile menu  -->
-    <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
-      <!-- left side nav bar  -->
-      <ul class="navbar-nav upbar">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle display mr-5" href="../Home/carouselandheader.html" id="navbarDropdown" role="button"
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto lists">
+        <li class="nav-item active home mr-5">
+          <a class="nav-link text-center" href="../index.html">
+            <span class="sign mt-5"><span class="fast-flicker">H</span><span class="flicker">om</span>e </span><span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown shop mr-5">
+          <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           <i class="fa fa-home"></i> <b>Home</b>
+            <span class="sign mt-5"><span class="fast-flicker">S</span><span class="flicker">ho</span>p</span>
           </a>
-        
-        </li>
-        <li class="nav-item display">
-          <a class="nav-link mr-5 mr-5" href="#"><b>Shop</b> <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item display">
-          <a class="nav-link mr-5" href="..\Blog1\Blog-g.html"><b>Blog</b></a>
-        </li>
-        <li class="nav-item display">
-          <a class="nav-link mr-5" href="..\Contact Us\Contact Us Page.html"><b>Contact</b></a>
-        </li>
-        <div class="icons d-flex flex-row bd-highlight ml-5 float-left">
-          <div class="p-2 bd-highlight">
-            <li class="nav-item display">
-              <a class="nav-link ml-5" href="#"><b><i class="fa fa-search" aria-hidden="true"></i></b></a>
-            </li>
+          <div class="dropdown-menu text-center drop" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../Shop_for_men/Uplift-men's-clothing.html"><span class="sign"><span
+                  class="fast-flicker">Shop </span><span class="flicker">for </span>Men</span></a>
+            <a class="dropdown-item" href="#"><span class="sign"><span
+                  class="fast-flicker">Shop </span><span class="flicker">for </span>Women</span></a>
           </div>
-          <div class="p-2 bd-highlight">
-            <li class="nav-item display">
-              <a class="nav-link" href="#"><b><i class="fa fa-user" aria-hidden="true"></i></b></a>
-            </li>
-          </div>
-          <div class="p-2 bd-highlight">
-            <li class="nav-item display">
-              <a class="nav-link" href="..\Cart\cart.html"><b><i class="fa fa-shopping-cart" aria-hidden="true"></i></b></a>
-            </li>
-          </div>
-        </div>
+        </li>
+        <li class="nav-item blog mr-5">
+          <a class="nav-link  text-center" href="../Blog1/Blog-g.html"><span class="sign"><span
+                class="fast-flicker">Bl</span><span class="flicker">o</span>g</span></a>
+        </li>
 
+        <!--<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
+        <li class="nav-item d-flex icons">
+
+
+          <a class="nav-link cart mr-5" href="../Cart/cart.html"><span class="sign"><span class="fast-flicker"><i
+                  class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></span></span></a>
+
+
+          <a class="nav-link user mr-5" href="../Contact Us/Contact Us Page.html"><span class="sign"><span
+                class="fast-flicker"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></span></span>
+          </a>
+        </li>
       </ul>
     </div>
-  </nav></div>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  </nav>
+      
+<div class="main_container">
 
-
-
-<section>
+ <section>
 <div class="container">
-  <img class="mySlides" src="images/heroimg1.jpg" align="center"   width=100% height=250 px>
-   <img class="mySlides" src="images/heroimg2.jpg" align="center"   width=100% height=250 px>
-    <img class="mySlides" src="images/heroimg3.jpg" align="center"   width=100% height=250 px>
   <div class="content">
- <div class="custom-select" style="width:200px;">
+ <div class="custom-select" style="width:250px;">
 Sort by:
  <select>
     <option value="0" >Popularity<i class='fas fa-angle-down' style='font-size:24px'></i></option>
@@ -164,28 +169,12 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect);
 </script>
   
-  <div class="page-no"><1/5></div>
+  <div class="page-no"><a href="#"><1/5></a></div>
   </div></div>
 
-</section>
+</section> 
 
-<script>
 
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
 
 
 
@@ -1016,51 +1005,62 @@ function myFunction8() {
 
 
 
-
-<div class="center">  <div class="row">
-   <div class="column">
-   <div class="n-ppost"> <img src="images/img1.jpg" alt="" style="width:100%">
+<div class="pcontainer"> 
+ <div class="row">
+  <div class="pbox">
+   <div class="pimgbx">
+  <img src="images/img1.jpg" alt="" style="width:100%">
      <p>Sneakers & Keds<br><a  href="#" ><b>Women Colorblock Sneakers</b></a><br>$154.00</p>
     <span class="w3-tag w3-display-topleft">New</span>
      
   </div>
-  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-  <div class="column">
-   <div class="n-ppost"> <img src="images/02.jpg" alt="" style="width:100%">
+
+   <div class="pbox">
+   <div class="pimgbx">
+    <img src="images/02.jpg" alt="" style="width:100%">
      <p>  Women’s T-shirt<br><a  href="#"><b>Cotton Lace Blouse</b></a><br>$28.50 <s>38.50</s></p>
  
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-  <div class="column">
-   <div class="n-ppost"> <img src="images/03.jpg" alt="" style="width:100%">
+
+  <div class="pbox">
+   <div class="pimgbx"> <img src="images/03.jpg" alt="" style="width:100%">
      <p> Women’s Shorts<br><a  href="#"><b>Mom High Waist Shorts</b></a><br>$39.50</p>
   </div>
-   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+   <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-   <div class="column">
-    <div class="n-ppost"><img src="images/04.jpg" alt="" style="width:100%">
+  
+   <div class="pbox">
+   <div class="pimgbx">
+    <img src="images/04.jpg" alt="" style="width:100%">
      <p>   Sportswear<br><a  href="#"><b>Women Sports Jacket</b></a><br>$68.40</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-   <div class="column">
-    <div class="n-ppost"><img src="images/05.jpg" alt="" style="width:100%">
+ 
+
+  <div class="pbox">
+   <div class="pimgbx">
+    <img src="images/05.jpg" alt="" style="width:100%">
      <p> Men’s Sunglasses<br><a  href="#"><b>Polarized Sunglasses</b></a><br>Out of stock</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-   <div class="column">
-    <div class="n-ppost"><img src="images/06.jpg" alt="" style="width:100%">
+
+ <div class="pbox">
+   <div class="pimgbx">
+    <img src="images/06.jpg" alt="" style="width:100%">
      <p> Backpacks<br><a  href="#"><b>TH Jeans City Backpack</b></a><br>$79.50</p>
   </div>
-   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+   <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
 </div>
@@ -1072,71 +1072,77 @@ function myFunction8() {
 </div>
 
  <div class="row">
-  <div class="column">
-   <div class="n-ppost"> <img src="images/07.jpg" alt="" style="width:100%">
+ <div class="pbox">
+   <div class="pimgbx"> <img src="images/07.jpg" alt="" style="width:100%">
      <p>Women's Swimwear<br><a  href="#"><b>Two-Piece Bikini in Print</b></a><br>$18.99</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-  <div class="column">
-    <div class="n-ppost"><img src="images/08.jpg" alt="" style="width:100%">
+  <div class="pbox">
+   <div class="pimgbx"><img src="images/08.jpg" alt="" style="width:100%">
      <p> Kid's Toys<br><a  href="#"><b>Soft Panda Teddy Bear</b></a><br>$14.99 </p>
   </div> 
-  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-  <div class="column">
-   <div class="n-ppost"> <img src="images/09.jpg" alt="" style="width:100%">
+   <div class="pbox">
+   <div class="pimgbx"> <img src="images/09.jpg" alt="" style="width:100%">
      <p>Cosmetics<br><a  href="#"><b>Metallic Lipstick (Crimson)</b></a><br>$12.99</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-   <div class="column">
-   <div class="n-ppost"> <img src="images/10.jpg" alt="" style="width:100%">
+  <div class="pbox">
+   <div class="pimgbx"> <img src="images/10.jpg" alt="" style="width:100%">
      <p>Men’s Accessories<br><a  href="#"><b>5-Pack Multicolor Bracelets</b></a><br>$7.99</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
-   <div class="column">
-    <div class="n-ppost"><img src="images/11.jpg" alt="" style="width:100%">
+   <div class="pbox">
+   <div class="pimgbx"><img src="images/11.jpg" alt="" style="width:100%">
      <p> Men’s Sandals<br><a  href="#"><b>Soft Footbed Sandals</b></a><br>$99.50</p>
   </div>
-   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+   <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-   <div class="column">
-    <div class="n-ppost"><img src="images/12.jpg" alt="" style="width:100%">
+   <div class="pbox">
+   <div class="pimgbx"><img src="images/12.jpg" alt="" style="width:100%">
      <p>Men’s Hats<br><a  href="#"><b>3-Color Sun Stash Hat</b></a><br>$25.99</p></div>
-   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+   <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
     
-     <div class="column">
-    <div class="n-ppost"><img src="images/13.jpg" alt="" style="width:100%">
+      <div class="pbox">
+   <div class="pimgbx"><img src="images/13.jpg" alt="" style="width:100%">
      <p>Men’s T-shirts<br><a  href="#"><b>Cotton Polo Regular Fit</b></a><br>$11.50<s> $13.50</s></p>
   </div>
-   <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+   <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-   <div class="column">
-   <div class="n-ppost"> <img src="images/14.jpg" alt="" style="width:100%">
+  <div class="pbox">
+   <div class="pimgbx"> <img src="images/14.jpg" alt="" style="width:100%">
      <p> Men’s Jeans<br><a  href="#"><b>Slim Taper Fit Jeans</b></a><br>$58.99</p>
   </div> 
-  <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+  <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
 </div>
-   <div class="column">
-   <div class="n-ppost"> <img src="images/15.jpg" alt="" style="width:100%">
+   <div class="pbox">
+   <div class="pimgbx"><img src="images/15.jpg" alt="" style="width:100%">
      <p>Men’s Waistcoats<br><a  href="#"><b>Single-breasted Trenchcoat</b></a><br>$79.99</p>
   </div>
- <div class="n-ppost-name"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button>
+ <div class="pcontentbx"><a href="#"><button class="add"><i class="fa fa-shopping-cart">Add to Cart </i></button></a>
   <div>Quick view</div></div>
   </div>
 </div>
 </div>
+<script type="text/javascript" src="tilt.js"></script>
+<script type="text/javascript">
+  VanillaTilt.init(document.querySelectorAll(".pbox"), {
+    max: 25, 
+    speed: 400
+  });</script>
 <div class="pagination">
   <a href="#">&laquo; Prev</a>
   <a href="#" class="active"><b>1</b></a>
@@ -1147,56 +1153,60 @@ function myFunction8() {
   <a href="#">6</a>
   <a href="#">Next &raquo;</a>
 </div>
+</div>
 
 
 
 
+  <!--footer-->
 
- <footer id="footer">
-                <div class="footer-top">
-                    
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12 segment-one ">
-                                <h3>About Us</h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s 
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 segment-two ">
-                            <h2>Shop department</h2>
-                            <ul>
-                                <li><a href="#">Mens</a></li>
-                                <li><a href="#">womens</a></li>
-                                <li><a href="#">Kids</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                            
-                            <h2>Follow Us</h2>
-                            <p>Please Follow Us On Our Social Media Profile To Keep Updated</p>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four m-0">
-                            <h2> New Brands</h2>
-                            <p>Subscribe to our newsletter to receive early discount on our new brands!!</p>
-                            <div class="sub">
-                            <form action="">
-                                <input id="mail" type="email" placeholder="Your email">
-                                <input id ="sbutton" type="submit" value="subscribe">
-                        
-                            </form>
-                            </div>
-                            </div>
-                        </div>
-                    
-                </div>
-                <p class="footer-bottom-text">All Right Reserved by &copy; Team Uplift 2020</p>
-            </footer>
+
+  <footer>
+    <div class="footer-top">
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-one ">
+          <h2 class="p-0 mb-2">About Us</h2>
+          <p style="color:#ffe6ff;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two ">
+          <h2>Shop department</h2>
+          <ul>
+            <li><a href="./Shop_for_men/Uplift-men's-clothing.html">Men</a></li>
+            <li><a href="./Shop_for_women/shop_for_women.html">Women</a></li>
+            <li><a href="#">Kids</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+
+          <h2>Follow Us</h2>
+          <p style="color:#ffe6ff;">Please Follow Us On Our Social Media Profile To Keep Updated</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-four m-0 text-center">
+          <h2> New Brands</h2>
+          <p style="color:#ffe6ff;">Subscribe to our newsletter to receive early discount on our new brands!!</p>
+          <div class="sub">
+            <form action="">
+              <input type="email" placeholder="Your email">
+              <input type="submit" value="subscribe">
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="footer-bottom-text">All Right Reserved by &copy; Team Uplift 2020</p>
+  </footer>
+
             <script src="imgs.js"></script>
             
 	</body>

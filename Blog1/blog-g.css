@@ -21,8 +21,12 @@ Nav
   background-size: 58px 58px;
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;*/
 }
-.drop a:hover,.drop{
-    background-color:#141114;
+.drop a:hover{
+  background-color:#141114;
+}
+
+.drop{ 
+  background-color: black;
 }
 .sign {
     width:100%;
@@ -282,6 +286,7 @@ a.logo:hover{
 .carousel-container{
     width: 80.8%;
     margin: auto;
+ 
     padding-top: 80px;
     padding-bottom: 11px;
     overflow: hidden;
@@ -290,6 +295,8 @@ a.logo:hover{
    
 }
 .carousel-slide{
+   
+    border-radius: 50%;
     display:flex;
     width: 100%;
       background-color: white;
