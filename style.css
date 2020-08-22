@@ -1,0 +1,434 @@
+/* this is your css file  */ 
+/*====================================================
+                DEFAULT VALUES:
+                Font Family                 : Roboto Condensed
+                
+                Greenish Blue               : #34c6d3       (Buttons, Icons, Links, Lines & Backgrounds)
+                Steel Gray                  : #41464b       (Headings)
+                Blue Bayoux                 : #64707b       (Paragraphs)
+                White                       : #fff          (Text With Black Backgrounds)
+                Black                       : #000 
+                
+                if required you all can edit this value and add further color hash , this is just to make coding easier
+                keep mentioning the fonts used ( you can use any of your choice )
+======================================================*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+
+/*====================================================
+                        HOME
+======================================================*/
+/*  for all section put the section name in comments then write */
+/* down the css and where you end your editing put a comment end*/
+/*  use this as an example practice  */
+#home {
+  height: 100%;
+}
+
+
+
+/*====================================================
+                   HOME End
+======================================================*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+}
+
+#header.header-scrolled {
+  background: rgba(25, 28, 31, 0.8);
+  height: 60px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+#mainNavbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.navbar-nav{
+    
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.navbar-nav li{
+    display:inline;
+}
+
+
+
+#mainNavbar  .nav-link{
+    color: white;
+    padding: 10px 10px;
+    margin: 0 10px 0 10px;
+    font-size: 15px;
+     display:inline-block;
+     font-weight: 700
+
+}
+#mainNavbar  .nav-link:hover{
+    color: #f06030;
+}
+
+
+#mainNavbar .navbar-brand{
+    color: #f06030;
+    font-size: 2.5rem;
+    font-weight: 100;
+    padding: 20px 20px;
+
+}
+#mainNavbar .dropdown-item:hover{
+  color: #f06030;
+
+}
+
+.navbar.scrolled{
+    background: rgb(44, 61, 80);
+    transition: background 500ms;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Quote
+--------------------------------------------------------------*/
+.Quote {
+  padding: 150px 0;
+  background: url("https://images.unsplash.com/photo-1509359149003-657ef23eaf04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.Quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.Quote .section-header {
+  margin-bottom: 40px;
+}
+
+.Quote .Quote-item {
+  text-align: center;
+  color: white;
+}
+
+
+
+.Quote .Quote-item h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: white;
+  font-family: "Satisfy", serif;
+}
+
+.Quote .Quote-item h2{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Satisfy", serif;
+}
+
+.Quote .Quote-item .quote-left, .Quote.Quote-item .quote-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.Quote .Quote-item .quote-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.Quote .Quote-item .quote-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+@media (min-width: 1024px) {
+  .Quote{
+    background-attachment: fixed;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact h2{
+  font-family: "Satisfy";
+  text-align: center;
+  padding :20px;
+  font-weight: 700
+}
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px 0 40px 0;
+}
+
+.contact .info-box i.bx {
+  font-size: 24px;
+  color:  #f06030;
+  border-radius: 50%;
+  padding: 25px;
+  background: #fff6e4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #687683;
+  line-height: 1;
+  margin: 0 8px;
+  transition: 0.3s;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid #dde1e4;
+}
+
+.contact .social-links a:hover {
+  color: #fff;
+  border-color: #f06027;
+  background: #f06030;
+}
+
+.contact .email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 27px;
+}
+
+.contact .email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .email-form input, .contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .email-form input::focus, .contact .email-form textarea::focus {
+  background-color:  #f06030;
+}
+
+.contact .email-form input {
+  padding: 20px 15px;
+}
+
+.contact .email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .email-form button[type="submit"] {
+  background: #f06030;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .email-form button[type="submit"]:hover {
+  background:#f09273 ;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: url("https://images.unsplash.com/photo-1558538337-aab544368de8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") top center no-repeat;
+
+  background-size: 2000px 355px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  position: relative;
+
+}
+
+
+
+#footer .container {
+  position: relative;
+}
+
+#footer h3 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Satisfy", serif;
+  margin: 0 0 5px 0 ;
+  text-align: left;
+}
+#footer .social-links {
+  text-align: right;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #f06030;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #f09273;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 1px 5px 5px 5px;
+}
+
+#footer .credits {
+  font-size: 40px;
+}
+#footer #Row-1{
+  padding: 0 0 1.5px 0;
+  font-size: 18px;
+  text-align: left;
+  }
+#footer #Row-2,#Row-3,#Row-4{
+  padding: 0 0 7px 0;
+  text-align: left;
+  
+}
+/* ----------------------------
+          About us
+-------------------------------- */
+.welcome{
+  text-align: center;
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.devour{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+
+/* if you feel the css is file is becoming too long to handle create a new css file in css directory and import it in html */
