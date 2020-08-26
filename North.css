@@ -63,3 +63,15 @@ body{
   .button:hover {
     background-color: #555;
   }
+
+  .dropdown a:hover{
+    color: #39faea;
+  }
+  .top p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Oleo Script', cursive;
+    color: whitesmoke;
+   
+  }
+  
