@@ -1,0 +1,34 @@
+---
+layout: base.njk
+permalink: /explore/
+eleventyNavigation:
+    key: Explore
+    title: Explore
+---
+<link rel="stylesheet" href="/assets/css/explore.css">
+<section class="jumbotron">
+    <h1>Explore</h1>
+    <p class="lead">Browse from the various handicrafts from the skilled craftspeople all around India.</p>
+</section>
+<section class="container">
+    {% set products = collections.products %}
+    {% for rows in products | batch(4) %}
+    <div class='row'>
+        {% for p in rows %}
+        <div class='col-lg-3 col-md-6 mb-3 d-flex'>
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{p.data.image}}" alt="p.data.name">
+                    <div class="card-body flex-fill">
+                        <h4 class="card-title">{{ p.data.name }}</h4>
+                        <p class="card-text text-success">{{p.data.price}} Rupees</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{p.url}}" class="btn btn-info w-100">View</a>
+
+                    </div>
+                </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,43 @@
+html body{
+  font-family: 'Poppins', sans-serif;;
+  }
+
+#navbar{
+  background-color: #F6BD60;
+}
+
+#logo{
+  font-family: 'Merienda', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #784C04;
+}
+
+.active{
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#cart:hover{
+  fill: #228B22;
+}
+
+.nav-link{
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.snipcart-checkout{
+  border: none;
+}

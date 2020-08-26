@@ -1,0 +1,4 @@
+{
+    "layout": "product.njk",
+    "permalink": "/explore/{{ name | slug }}/"
+}
