@@ -1,0 +1,20 @@
+.jumbotron{
+    background-color: #dfe6e9;
+    padding: 52px;
+}
+/* 
+.contact-section{
+    min-height: 78vh;
+} */
+
+.contact-image{
+    width: 400px;
+    height: 300px;
+}
+
+@media screen and (max-width: 750px) {
+    .contact-image{
+        width: 300px;
+        height: 200px;
+    }   
+}

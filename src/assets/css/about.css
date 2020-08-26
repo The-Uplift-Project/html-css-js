@@ -1,0 +1,277 @@
+.about-section {
+    background-color: whitesmoke;
+    background: url(/assets/img/HandMade.jpg) no-repeat left;
+    background-size: 55%;
+    overflow: hidden;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: white;
+    padding: 80px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner-container h1 {
+    text-align: right;
+}
+
+.text {
+    font-size: 20px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    
+}
+
+
+/*-------------Uplift-------------*/
+.uplift-section{
+    background: #e3edf7;
+    width: 100%;
+    margin: 0;
+    padding: 70px 100px;
+    min-height: 90vh;
+}
+
+.uplift-right-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uplift-btn {
+    width: 150px;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.upift-text a .uplift-btn {
+    text-decoration: none;
+}
+
+.uplift-text {
+    font-size: 18px;
+}
+
+.uplift-right-col h1 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding: 50px 0 50px;
+    color: #555;
+    text-align: center;
+}
+
+.uplift-right-col .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.uplift-right-col .social-media a {
+    display: flex;
+    background-color: #e3edf7;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0,0,0,0.01);
+    transition: transform 0.5s;
+}
+
+.uplift-right-col .social-media a i {
+    font-size: 25px;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+.uplift-right-col .social-media a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, .15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translate(2px);
+}
+
+.uplift-right-col .social-media a:hover i {
+    transform: scale(0.80);
+}
+
+.uplift-right-col .social-media a:hover .fa-facebook {
+    color: #3b5998;
+}
+
+.uplift-right-col .social-media a:hover .fa-twitter {
+    color: #00acee;
+}
+
+.uplift-right-col .social-media a:hover .fa-github {
+    color: #211F1F;
+}
+
+.uplift-right-col .social-media a:hover .fa-instagram {
+    color: #f14843;
+}
+
+.uplift-right-col .social-media a:hover .fa-linkedin {
+    color: #0e76a8;
+}
+
+/*-------------------Team Section--------------------*/
+.team-section h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.team-section .container {
+    /* max-width: 1140px; */
+    margin: auto;
+    /* position: relative; */
+    min-height: 1px;
+}
+
+.team-section {
+    min-height: 100vh;
+    padding: 10px 15px;
+    /* float: left; */
+    width: 100%;
+}
+
+.team-section .card {
+    width: 25%;
+    float: left;
+    padding: 0px 15px;
+    border: none;
+}
+
+.team-section .card .box {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #dfe6e9;
+    transition: margin 1s ease, box-shadow 1s ease;
+}
+
+.team-section .card .box:hover {
+    margin-top: -15px;
+    box-shadow: 0px 0px 40px grey;
+}
+
+.team-section .card .box img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.team-section .card .box h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 20px 0px 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.team-section .card .box h5 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2d3436;
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+
+.team-section .card .box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------Media Query---------------------*/
+
+@media screen and (max-width: 1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        margin-top: -12%;
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    
+    .inner-container {
+        width: 100%;
+    }
+    
+    .team-section .card {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container > h1{
+        text-align: center;
+    }
+    
+    .inner-container {
+        padding: 50px;
+    }
+
+    .team-section .card {
+        width: 100%
+    }
+    .uplift-text{
+        text-align: center;
+    }
+
+    .uplift-section{
+        padding: 20px;
+    }
+
+    .uplift-right-col .social-media a{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+}

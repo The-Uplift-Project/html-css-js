@@ -1,0 +1,30 @@
+.card{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(133,133,133,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(133,133,133,1);
+box-shadow: 5px 5px 5px 0px rgba(133,133,133,1);
+
+border: 0.5px solid rgb(216, 216, 216);
+background-color: #dfe6e9;
+}
+
+/* .card-body{
+    border-top: 0.5px solid rgb(216, 216, 216);
+} */
+
+.card-img-top{
+    border: solid #dfe6e9 10px;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
+
+.card-footer > a{
+    background-color: #34344A;
+    border: none;
+}
+
+
+.jumbotron{
+    background-color: #8CD867;
+}
