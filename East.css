@@ -2,7 +2,8 @@ html {
     box-sizing: border-box;
   }
 body{
-    background-image: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #339966 0%, #ccff66 100%);
+  background-size: cover;
 }
   
   *, *:before, *:after {
@@ -65,7 +66,7 @@ body{
   }
 
   .dropdown a:hover{
-    color: #39faea;
+    color: #49fa39;
   }
   .top p{
     text-align: center;
@@ -74,4 +75,3 @@ body{
     color: whitesmoke;
    
   }
-  
