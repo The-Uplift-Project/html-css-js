@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    
+}
+#particles-js
+{
+    
+    background: #0e0d0e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+h1 {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    font-weight: bold;
+    color: white;
+    padding-top: 35px;
+    font-family:  'Satisfy', cursive;
+}
+
+
+.cards {
+    padding-top: 150px;
+}
+
+.single_box{
+   
+    height: 430px;
+    background: #000;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .6s;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+   
+}
+.single_box .img_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .6s;
+    width: 110%;
+    height: 100%;
+   
+}
+.single_box .img_box img{
+    width: 110%;
+    height: 100%;
+    border-radius: 8px;
+}
+.single_box:hover .img_box{
+    opacity: .5;
+}
+
+.single_box .content_box{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    bottom: -100%;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .6s;
+    color: white;
+    font-weight: bold;
+}
+ 
+.single_box .content_box h3{
+    margin: 0;
+   
+}
+
+.single_box .content_box h5 {
+     margin: 0;
+     color: #ff3333;
+    
+}
+
+.single_box .content_box p{
+    font-size: 13px;
+}
+
+.single_box .content_box  .social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.single_box .content_box  .social ul li a{
+  color: white;
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+.single_box:hover .content_box{
+    bottom: 0;
+}
+
+
+#box .box_single:nth-child(1) .content_box{
+    background: linear-gradient(0deg, #33ff58,transparent);
+}
+
+#box .box_single:nth-child(2) .content_box{
+    background: linear-gradient(0deg,  #33ff58,transparent);
+}
+
+#box .box_single:nth-child(3) .content_box{
+    background: linear-gradient(0deg, #33ff58,transparent)
+}
+
