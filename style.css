@@ -77,8 +77,8 @@ body {
 
 #mainNavbar  .nav-link{
     color: white;
-    padding: 10px 10px 0 10px;
-    margin: 0 10px 0 10px;
+    padding: 3px 7px 0 7px;
+    margin: 0 7px 0 7px;
     font-size: 15px;
      display:inline-block;
      font-weight: 700
@@ -91,10 +91,9 @@ body {
 
 #mainNavbar .navbar-brand{
     color: #f06030;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 100;
-    padding: 10px 20px 0 20px;
-
+     padding: 3px 10px 0 10px;
 }
 #mainNavbar .dropdown-item:hover{
   color: #f06030;
