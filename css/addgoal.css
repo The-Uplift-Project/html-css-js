@@ -175,38 +175,11 @@ body{
     padding-top:15px;
     line-height: 32px;
     font-weight: bolder;
-    background-image:linear-gradient(60deg,#78eb6e,#2e9fb3,#3edb92);
+    background-color:#343a40;
+	color:white;
  }
 
 #sub_div{
     margin:15px;
     text-align:right;
 }
-#text{
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
